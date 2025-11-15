@@ -1,0 +1,85 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .secCon{
+    z-index: 10;
+} */
+
+
+
+.serviceSec{
+    position: relative;
+    height: 100vh;
+
+    background: url(./img/next_step_bg.png) ;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgba(255, 255, 255, 0.747);
+    background-blend-mode: lighten;
+    overflow: hidden;
+    z-index: 1;
+}
+.secCon::before{
+    content: url(./img/ab-shape-1.png);
+    position: absolute;
+    top: 86px;;
+    right: 50px;
+     animation: icon 3s ease-in-out infinite;
+    z-index: -1;
+    
+}
+@keyframes icon {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translatex(-15px);
+    }
+}
+
+.serviceSec::after{
+    content: url(./img/shape-1.png);
+    position: absolute;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 112px;
+    left: 0;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.smBtn{
+    border: 1px solid wheat;
+   background:white;
+   transition: all .3s ease-in-out;
+   /* color:#FF3700; */color: rgba(0, 0, 0, 0.911);
+   font-size:medium;
+   
+}
+.smBtn:hover{
+    background: #FF3700;
+    color: white;
+    background: linear-gradient(90deg,rgba(255, 55, 0, 1) 0%, rgba(255, 118, 38, 1) 57%, rgba(255, 140, 0, 1) 100%);
+}
+
+
+/* --responsive--- */
+@media (max-width:800px) {
+ 
+  .secCon::before{
+    content: url(./img/ab-shape-1.png);
+    position: absolute;
+    top: 40px;;
+    right: -15px;
+     animation: icon 3s ease-in-out infinite;
+    z-index: -1;
+    
+}
+    
+    
+}
