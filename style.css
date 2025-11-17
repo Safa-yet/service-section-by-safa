@@ -4,24 +4,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .secCon{
-    z-index: 10;
-} */
-
 
 
 .serviceSec{
     position: relative;
-    height: 100vh;
+    height: 100%;
 
     background: url(./img/next_step_bg.png) ;
-    background-position: fixed;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:rgba(255, 255, 255, 0.747);
+    background-color:rgba(255, 255, 255, 0.809);
     background-blend-mode: lighten;
     overflow: hidden;
     z-index: 1;
+}
+.hbox{
+    background-color: #f5d7ceae;
+    color: #ff4a17;
 }
 .secCon::before{
     content: url(./img/ab-shape-1.png);
@@ -44,7 +44,6 @@
 .serviceSec::after{
     content: url(./img/shape-1.png);
     position: absolute;
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
     top: 112px;
@@ -56,16 +55,163 @@
 .smBtn{
     border: 1px solid wheat;
    background:white;
-   transition: all .3s ease-in-out;
-   /* color:#FF3700; */color: rgba(0, 0, 0, 0.911);
+   transition: all .1s ease-in-out;
+  color: rgba(0, 0, 0, 0.911);
    font-size:medium;
    
 }
 .smBtn:hover{
-    background: #FF3700;
+   
     color: white;
     background: linear-gradient(90deg,rgba(255, 55, 0, 1) 0%, rgba(255, 118, 38, 1) 57%, rgba(255, 140, 0, 1) 100%);
+    border-color: #ff4a17;
 }
+
+
+/* Boxes */
+
+.box{
+    
+    background:#81a3d0;
+    transition: all 0.3s ease-in-out;
+    /* opacity: 0.8; */
+
+}
+
+.smText{
+
+    font-size: .8rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.653);
+}
+.box h4{
+    font-size: 20px;
+    color: black;
+}
+.circle{
+    position: absolute;
+    top: -35px;
+    width: 5rem;
+    height: 5rem;
+   
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+    
+    
+}
+.arrow{
+    color: rgba(0, 0, 0, 0.801);
+}
+
+.arrowRight{
+    transition: all 0.3s ease-in-out;
+}
+.arrowDown{
+    transition: all 0.3s ease-in-out;
+}
+/* box 1 */
+.box1{
+    background-color: hsl(55, 90%, 67%);
+}
+.circle1{
+    background-color: #eab308 ;
+    color: rgb(255, 255, 255);
+    border: 3px solid beige;
+
+
+}
+.boxx:hover .circle1{
+     box-shadow: 3px 3px 26px 6px rgb(0, 0, 0);
+     color: rgb(255, 255, 255);
+     border: #582ddb;
+}
+
+/* Box 2 */
+.box2{
+    background-color: #16a34abd;
+}
+.circle2{
+    background-color: #16a34a ;
+    color: beige;
+    border: 3px solid beige;
+
+
+}
+.boxx:hover .circle2{
+     box-shadow: 3px 3px 26px 6px black;
+     border: #001d08;
+}
+
+/* Box 3 */
+.box3{
+    background-color: #9dc1f1;
+}
+.circle3{
+    background-color: #2563eb ;
+    color: beige;
+    border: 3px solid beige;
+
+
+}
+.boxx:hover .circle3{
+     box-shadow: 3px 3px 26px 6px #00000082;
+     border: #81a3d0;
+}
+/*  Box 4 */
+
+.box4{
+    background-color: #ff6200ba;
+}
+.circle4{
+    background-color: #FF6200;
+    color: beige;
+    border: 3px solid beige;
+
+
+}
+
+.boxx:hover .circle4{
+     box-shadow: 3px 3px 26px 6px #00000082;
+     border: #ff4a17;
+}
+
+
+/* Hover */
+.box:hover {
+    opacity: 1;
+    transform: translateY(-20px);
+    /* box-shadow: 0 20px 30px rgba(0, 0, 0, 0.408); */
+}
+
+.boxx:hover .arrowRight{
+ transform: translateX(5px);
+   
+}
+
+.boxx:hover .arrowDown{
+ transform: translateY(5px);
+   
+}
+.boxx:hover .circle{
+ transform: translateY(2px) rotate(360deg);
+ 
+}
+
+.primaryBtn{
+    padding: .5rem 1.5rem;
+    background-color: #ff4a17;
+    color: white;
+    border: none;
+    border-radius:5px ;
+    transition: all .2s ease-in-out;
+    
+}
+.primaryBtn:hover{
+    background-color: #001d08;
+}
+
+
 
 
 /* --responsive--- */
@@ -80,6 +226,28 @@
     z-index: -1;
     
 }
+
+.box{
+    width: 100%;
+}
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+}
+
     
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
